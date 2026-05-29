@@ -1,20 +1,20 @@
-# Secrets
-.secrets/
-*.token
-*.key
+
+.DS_Store
+# Editor
 .env
 .env.*
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Editor
-.vscode/
 .idea/
-
-# Logs
-*.log
-scripts/__pycache__/
 inbox/
+*.key
 .listener*
+*.log
+# Logs
+# OS
+**/__pycache__/
+scripts/__pycache__/
+.secrets/
+# Secrets
+skills/*/__pycache__/
+Thumbs.db
+*.token
+.vscode/

@@ -1,0 +1,37 @@
+{
+  "macro:2": {
+    "ts": 1780067223.1333869,
+    "data": [],
+    "kind": "macro"
+  },
+  "earnings:NVDA": {
+    "ts": 1780067233.6348944,
+    "data": {
+      "date": "2026-08-18T00:00:00+00:00",
+      "days_until": 80,
+      "source": "sec_estimate",
+      "note": "Estimated as last earnings + 90 days"
+    },
+    "kind": "earnings"
+  },
+  "earnings:AAPL": {
+    "ts": 1780067244.111369,
+    "data": {
+      "date": "2026-07-29T00:00:00+00:00",
+      "days_until": 60,
+      "source": "sec_estimate",
+      "note": "Estimated as last earnings + 90 days"
+    },
+    "kind": "earnings"
+  },
+  "earnings:MSFT": {
+    "ts": 1780067254.6030684,
+    "data": {
+      "date": "2026-07-28T00:00:00+00:00",
+      "days_until": 59,
+      "source": "sec_estimate",
+      "note": "Estimated as last earnings + 90 days"
+    },
+    "kind": "earnings"
+  }
+}
