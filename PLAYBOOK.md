@@ -30,3 +30,9 @@ _(format : Date | Trade ID | Erreur | Règle ajoutée)_
 ## Apprentissages génériques
 
 _(format libre, idées qu'on veut garder en tête)_
+
+### 2026-05-29 — Tester la plomberie AVANT de cimenter la stratégie
+
+Le 1er test end-to-end de l'API eToro a révélé que **la crypto est bloquée** à l'auto-trading via API publique (errorCode 759). Si on avait passé des semaines à peaufiner la stratégie crypto avant ce test, on aurait perdu un temps fou.
+
+**Règle générique :** avant de figer une stratégie sur un actif/marché, **toujours valider que toute la chaîne technique (data + exécution + monitoring + fermeture) fonctionne sur cet actif spécifique**, avec un trade min en démo. Réf : `analysis/2026-05-29-1418-etoro-api-crypto-blocked.md`.
