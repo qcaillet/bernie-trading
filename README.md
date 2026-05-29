@@ -53,6 +53,9 @@ Bernie (LLM + cron)         Quentin (human)         eToro API
 
 ## Stack technique
 
+- **LLM principal** : Claude Opus 4.8 via Anthropic Max (`anthropic/claude-opus-4-8`, alias `opus`)
+- **Fallbacks LLM** : `openai-codex/gpt-5.5` puis `github-copilot/claude-sonnet-4.6`
+- **LLM optionnel manuel** : `openai/gpt-5.5`
 - **Marché de départ** : crypto BTC / ETH uniquement
 - **Broker** : eToro (compte démo dans un premier temps)
 - **API** : eToro Public API (lancée oct 2025) — `https://api-portal.etoro.com`

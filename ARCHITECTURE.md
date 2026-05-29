@@ -4,6 +4,14 @@
 
 ## Vue d'ensemble
 
+## Stack LLM OpenClaw
+
+- **Modèle principal** : `anthropic/claude-opus-4-8` (`opus`) via auth Anthropic `token` liée au compte Claude Max de Quentin.
+- **Fallback #1** : `openai-codex/gpt-5.5` pour garder Bernie opérationnel si Opus 4.8 est indisponible ou quota Max épuisé.
+- **Fallback #2** : `github-copilot/claude-sonnet-4.6` comme filet de secours.
+- **Option manuelle configurée** : `openai/gpt-5.5`.
+- **Retirés volontairement** : `gpt-5.4`, `gpt-5.4-mini`, `anthropic/claude-opus-4-7`, `github-copilot/claude-opus-4.7`, `github-copilot/gpt-5.5`.
+
 ```
                           ┌───────────────────────────┐
                           │  Quentin (Telegram + Web) │

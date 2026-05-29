@@ -53,5 +53,10 @@
       "note": "Estimated as last earnings + 90 days"
     },
     "kind": "earnings"
+  },
+  "macro:7": {
+    "ts": 1780084869.982313,
+    "data": [],
+    "kind": "macro"
   }
 }
