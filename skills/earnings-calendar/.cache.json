@@ -33,5 +33,25 @@
       "note": "Estimated as last earnings + 90 days"
     },
     "kind": "earnings"
+  },
+  "earnings:GOOGL": {
+    "ts": 1780077742.6004593,
+    "data": {
+      "date": "2026-07-28T00:00:00+00:00",
+      "days_until": 59,
+      "source": "sec_estimate",
+      "note": "Estimated as last earnings + 90 days"
+    },
+    "kind": "earnings"
+  },
+  "earnings:AMZN": {
+    "ts": 1780077753.1468544,
+    "data": {
+      "date": "2026-07-28T00:00:00+00:00",
+      "days_until": 59,
+      "source": "sec_estimate",
+      "note": "Estimated as last earnings + 90 days"
+    },
+    "kind": "earnings"
   }
 }
