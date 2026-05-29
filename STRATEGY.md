@@ -8,8 +8,8 @@
 | Symbol | Type | InstrumentID eToro | Pourquoi |
 |---|---|---|---|
 | **SPY** | ETF S&P500 | 3000 | Très liquide, peu volatil, école de discipline |
-| **QQQ** | ETF Nasdaq100 | _(à résoudre)_ | Tech-heavy, narratif clair, volatilité utile |
-| **NVDA** | Action Nvidia | _(à résoudre)_ | Star tech, vol élevée, catalyseurs fréquents |
+| **QQQ** | ETF Nasdaq100 | 3006 | Tech-heavy, narratif clair, volatilité utile |
+| **NVDA** | Action Nvidia | 1137 | Star tech, vol élevée, catalyseurs fréquents |
 
 **Pas plus de 3 instruments.** Focus > diversification à ce stade.
 

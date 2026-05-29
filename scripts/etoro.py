@@ -39,18 +39,27 @@ class EToro:
     def _load_keys(path: Path) -> tuple[str, str]:
         if not path.exists():
             raise EToroError(f"Secrets introuvables: {path}")
-        pub = priv = None
+        # Collect all key=value pairs, then auto-detect which is x-api-key vs x-user-key
+        # by length: x-api-key is short (~63 chars), x-user-key is a long JWT-ish (~260 chars).
+        # This makes the loader robust to inverted variable names in the secrets file.
+        candidates = []
         for line in path.read_text().splitlines():
             line = line.strip()
             if not line or line.startswith("#") or "=" not in line:
                 continue
             k, v = line.split("=", 1)
-            if k.strip() == "ETORO_PUBLIC_KEY":
-                pub = v.strip()
-            elif k.strip() == "ETORO_PRIVATE_KEY":
-                priv = v.strip()
-        if not pub or not priv:
-            raise EToroError("ETORO_PUBLIC_KEY / ETORO_PRIVATE_KEY manquantes")
+            k = k.strip().upper()
+            v = v.strip()
+            if not v:
+                continue
+            if any(token in k for token in ("ETORO", "API", "USER", "PUBLIC", "PRIVATE", "KEY")):
+                candidates.append(v)
+        if len(candidates) < 2:
+            raise EToroError("Need 2 eToro keys (x-api-key + x-user-key) in secrets file")
+        # Shortest = api-key (x-api-key), longest = user-key (x-user-key)
+        candidates.sort(key=len)
+        pub = candidates[0]
+        priv = candidates[-1]
         return pub, priv
 
     def _h(self) -> dict:
